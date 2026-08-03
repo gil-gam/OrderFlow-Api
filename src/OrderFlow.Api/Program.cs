@@ -15,6 +15,7 @@ using OrderFlow.Application.Common.Interfaces;
 using OrderFlow.Infrastructure;
 using OrderFlow.Infrastructure.Data;
 using OrderFlow.Infrastructure.Services;
+using OrderFlow.Infrastructure.Data.Seed;
 using Serilog;
 using System.Text;
 using System.Threading.RateLimiting;
@@ -213,7 +214,11 @@ app.UseOpenTelemetryPrometheusScrapingEndpoint();
 using (var scope = app.Services.CreateScope())
 {
     var db = scope.ServiceProvider.GetRequiredService<OrderFlowDbContext>();
+    var configuration = scope.ServiceProvider.GetRequiredService<IConfiguration>();
+    var environment = scope.ServiceProvider.GetRequiredService<IHostEnvironment>();
+
     await db.Database.MigrateAsync();
+    await DataSeeder.SeedAsync(db, configuration, environment);
 }
 
 // ── Application Start ─────────────────────────────────────
