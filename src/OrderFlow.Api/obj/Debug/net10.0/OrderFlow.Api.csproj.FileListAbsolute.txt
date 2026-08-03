@@ -460,3 +460,4 @@ D:\Repos\orderflow\OrderFlow-Api\src\OrderFlow.Api\obj\Debug\net10.0\OrderFlow.A
 D:\Repos\orderflow\OrderFlow-Api\src\OrderFlow.Api\obj\Debug\net10.0\OrderFlow.Api.pdb
 D:\Repos\orderflow\OrderFlow-Api\src\OrderFlow.Api\obj\Debug\net10.0\OrderFlow.Api.genruntimeconfig.cache
 D:\Repos\orderflow\OrderFlow-Api\src\OrderFlow.Api\obj\Debug\net10.0\ref\OrderFlow.Api.dll
+D:\Repos\orderflow\OrderFlow-Api\src\OrderFlow.Api\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt

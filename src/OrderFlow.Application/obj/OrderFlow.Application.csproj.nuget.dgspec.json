@@ -34,8 +34,8 @@
             "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {
-              "D:\\repos\\orderflow\\OrderFlow-Api\\src\\OrderFlow.Domain\\OrderFlow.Domain.csproj": {
-                "projectPath": "D:\\repos\\orderflow\\OrderFlow-Api\\src\\OrderFlow.Domain\\OrderFlow.Domain.csproj"
+              "D:\\Repos\\orderflow\\OrderFlow-Api\\src\\OrderFlow.Domain\\OrderFlow.Domain.csproj": {
+                "projectPath": "D:\\Repos\\orderflow\\OrderFlow-Api\\src\\OrderFlow.Domain\\OrderFlow.Domain.csproj"
               }
             }
           }
@@ -380,20 +380,20 @@
         }
       }
     },
-    "D:\\repos\\orderflow\\OrderFlow-Api\\src\\OrderFlow.Domain\\OrderFlow.Domain.csproj": {
+    "D:\\Repos\\orderflow\\OrderFlow-Api\\src\\OrderFlow.Domain\\OrderFlow.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\repos\\orderflow\\OrderFlow-Api\\src\\OrderFlow.Domain\\OrderFlow.Domain.csproj",
+        "projectUniqueName": "D:\\Repos\\orderflow\\OrderFlow-Api\\src\\OrderFlow.Domain\\OrderFlow.Domain.csproj",
         "projectName": "OrderFlow.Domain",
-        "projectPath": "D:\\repos\\orderflow\\OrderFlow-Api\\src\\OrderFlow.Domain\\OrderFlow.Domain.csproj",
+        "projectPath": "D:\\Repos\\orderflow\\OrderFlow-Api\\src\\OrderFlow.Domain\\OrderFlow.Domain.csproj",
         "packagesPath": "C:\\Users\\andre\\.nuget\\packages\\",
-        "outputPath": "D:\\repos\\orderflow\\OrderFlow-Api\\src\\OrderFlow.Domain\\obj\\",
+        "outputPath": "D:\\Repos\\orderflow\\OrderFlow-Api\\src\\OrderFlow.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "d:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "D:\\repos\\orderflow\\OrderFlow-Api\\NuGet.Config",
+          "D:\\Repos\\orderflow\\OrderFlow-Api\\NuGet.Config",
           "C:\\Users\\andre\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"

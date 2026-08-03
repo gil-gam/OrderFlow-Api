@@ -1116,8 +1116,8 @@
           "framework": "net10.0",
           "targetAlias": "net10.0",
           "projectReferences": {
-            "D:\\repos\\orderflow\\OrderFlow-Api\\src\\OrderFlow.Domain\\OrderFlow.Domain.csproj": {
-              "projectPath": "D:\\repos\\orderflow\\OrderFlow-Api\\src\\OrderFlow.Domain\\OrderFlow.Domain.csproj"
+            "D:\\Repos\\orderflow\\OrderFlow-Api\\src\\OrderFlow.Domain\\OrderFlow.Domain.csproj": {
+              "projectPath": "D:\\Repos\\orderflow\\OrderFlow-Api\\src\\OrderFlow.Domain\\OrderFlow.Domain.csproj"
             }
           }
         }
