@@ -11,3 +11,16 @@ D:\Repos\OrderFlow\src\OrderFlow.Domain\obj\Debug\net10.0\OrderFlow.Domain.dll
 D:\Repos\OrderFlow\src\OrderFlow.Domain\obj\Debug\net10.0\refint\OrderFlow.Domain.dll
 D:\Repos\OrderFlow\src\OrderFlow.Domain\obj\Debug\net10.0\OrderFlow.Domain.pdb
 D:\Repos\OrderFlow\src\OrderFlow.Domain\obj\Debug\net10.0\ref\OrderFlow.Domain.dll
+D:\repos\orderflow\OrderFlow-Api\src\OrderFlow.Domain\bin\Debug\net10.0\OrderFlow.Domain.deps.json
+D:\Repos\orderflow\OrderFlow-Api\src\OrderFlow.Domain\bin\Debug\net10.0\OrderFlow.Domain.dll
+D:\Repos\orderflow\OrderFlow-Api\src\OrderFlow.Domain\bin\Debug\net10.0\OrderFlow.Domain.pdb
+D:\Repos\orderflow\OrderFlow-Api\src\OrderFlow.Domain\obj\Debug\net10.0\OrderFlow.Domain.csproj.AssemblyReference.cache
+D:\Repos\orderflow\OrderFlow-Api\src\OrderFlow.Domain\obj\Debug\net10.0\OrderFlow.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Repos\orderflow\OrderFlow-Api\src\OrderFlow.Domain\obj\Debug\net10.0\OrderFlow.Domain.AssemblyInfoInputs.cache
+D:\Repos\orderflow\OrderFlow-Api\src\OrderFlow.Domain\obj\Debug\net10.0\OrderFlow.Domain.AssemblyInfo.cs
+D:\Repos\orderflow\OrderFlow-Api\src\OrderFlow.Domain\obj\Debug\net10.0\OrderFlow.Domain.csproj.CoreCompileInputs.cache
+D:\Repos\orderflow\OrderFlow-Api\src\OrderFlow.Domain\obj\Debug\net10.0\OrderFlow.Domain.sourcelink.json
+D:\Repos\orderflow\OrderFlow-Api\src\OrderFlow.Domain\obj\Debug\net10.0\OrderFlow.Domain.dll
+D:\Repos\orderflow\OrderFlow-Api\src\OrderFlow.Domain\obj\Debug\net10.0\refint\OrderFlow.Domain.dll
+D:\Repos\orderflow\OrderFlow-Api\src\OrderFlow.Domain\obj\Debug\net10.0\OrderFlow.Domain.pdb
+D:\repos\orderflow\OrderFlow-Api\src\OrderFlow.Domain\obj\Debug\net10.0\ref\OrderFlow.Domain.dll

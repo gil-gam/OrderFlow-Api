@@ -4931,17 +4931,17 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Repos\\OrderFlow\\src\\OrderFlow.Api\\OrderFlow.Api.csproj",
+      "projectUniqueName": "D:\\Repos\\orderflow\\OrderFlow-Api\\src\\OrderFlow.Api\\OrderFlow.Api.csproj",
       "projectName": "OrderFlow.Api",
-      "projectPath": "D:\\Repos\\OrderFlow\\src\\OrderFlow.Api\\OrderFlow.Api.csproj",
+      "projectPath": "D:\\Repos\\orderflow\\OrderFlow-Api\\src\\OrderFlow.Api\\OrderFlow.Api.csproj",
       "packagesPath": "C:\\Users\\andre\\.nuget\\packages\\",
-      "outputPath": "D:\\Repos\\OrderFlow\\src\\OrderFlow.Api\\obj\\",
+      "outputPath": "D:\\Repos\\orderflow\\OrderFlow-Api\\src\\OrderFlow.Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "d:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "D:\\Repos\\OrderFlow\\NuGet.Config",
+        "D:\\Repos\\orderflow\\OrderFlow-Api\\NuGet.Config",
         "C:\\Users\\andre\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -4958,11 +4958,11 @@
           "framework": "net10.0",
           "targetAlias": "net10.0",
           "projectReferences": {
-            "D:\\Repos\\OrderFlow\\src\\OrderFlow.Application\\OrderFlow.Application.csproj": {
-              "projectPath": "D:\\Repos\\OrderFlow\\src\\OrderFlow.Application\\OrderFlow.Application.csproj"
+            "D:\\Repos\\orderflow\\OrderFlow-Api\\src\\OrderFlow.Application\\OrderFlow.Application.csproj": {
+              "projectPath": "D:\\Repos\\orderflow\\OrderFlow-Api\\src\\OrderFlow.Application\\OrderFlow.Application.csproj"
             },
-            "D:\\Repos\\OrderFlow\\src\\OrderFlow.Infrastructure\\OrderFlow.Infrastructure.csproj": {
-              "projectPath": "D:\\Repos\\OrderFlow\\src\\OrderFlow.Infrastructure\\OrderFlow.Infrastructure.csproj"
+            "D:\\Repos\\orderflow\\OrderFlow-Api\\src\\OrderFlow.Infrastructure\\OrderFlow.Infrastructure.csproj": {
+              "projectPath": "D:\\Repos\\orderflow\\OrderFlow-Api\\src\\OrderFlow.Infrastructure\\OrderFlow.Infrastructure.csproj"
             }
           }
         }
@@ -5074,7 +5074,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.301/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.302/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.AspNetCore": "(,10.0.32767]",
           "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",

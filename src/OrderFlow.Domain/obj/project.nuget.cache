@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vZ58ViS0Ga0=",
+  "dgSpecHash": "dH+IwFudSOU=",
   "success": true,
-  "projectFilePath": "D:\\Repos\\OrderFlow\\src\\OrderFlow.Domain\\OrderFlow.Domain.csproj",
+  "projectFilePath": "D:\\repos\\orderflow\\OrderFlow-Api\\src\\OrderFlow.Domain\\OrderFlow.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\andre\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512"
   ],

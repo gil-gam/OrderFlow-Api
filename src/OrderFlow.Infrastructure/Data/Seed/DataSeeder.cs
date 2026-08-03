@@ -1,4 +1,3 @@
-using BCrypt.Net;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
@@ -32,7 +31,7 @@ public static class DataSeeder
             context.Users.Add(new User(
                 name: "Administrator",
                 email: adminEmail,
-                passwordHash: BCrypt.HashPassword(adminPassword)));
+                passwordHash: BCrypt.Net.BCrypt.HashPassword(adminPassword)));
         }
 
         // ── Demo domain data (idempotent by entity) ─────────────

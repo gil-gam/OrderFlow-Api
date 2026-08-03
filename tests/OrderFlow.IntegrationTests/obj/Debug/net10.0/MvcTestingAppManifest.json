@@ -1,6 +1,6 @@
 {
-  "OrderFlow.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\Repos\\OrderFlow\\src\\OrderFlow.Api",
-  "OrderFlow.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\Repos\\OrderFlow\\src\\OrderFlow.Application",
-  "OrderFlow.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\Repos\\OrderFlow\\src\\OrderFlow.Domain",
-  "OrderFlow.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\Repos\\OrderFlow\\src\\OrderFlow.Infrastructure"
+  "OrderFlow.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\Repos\\orderflow\\OrderFlow-Api\\src\\OrderFlow.Api",
+  "OrderFlow.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\Repos\\orderflow\\OrderFlow-Api\\src\\OrderFlow.Application",
+  "OrderFlow.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\Repos\\orderflow\\OrderFlow-Api\\src\\OrderFlow.Domain",
+  "OrderFlow.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\Repos\\orderflow\\OrderFlow-Api\\src\\OrderFlow.Infrastructure"
 }

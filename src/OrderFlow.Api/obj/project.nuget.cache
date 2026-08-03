@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fSyjblDRvmM=",
+  "dgSpecHash": "4ojPmpL68nQ=",
   "success": true,
-  "projectFilePath": "D:\\Repos\\OrderFlow\\src\\OrderFlow.Api\\OrderFlow.Api.csproj",
+  "projectFilePath": "D:\\Repos\\orderflow\\OrderFlow-Api\\src\\OrderFlow.Api\\OrderFlow.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\andre\\.nuget\\packages\\asp.versioning.abstractions\\10.0.0\\asp.versioning.abstractions.10.0.0.nupkg.sha512",
     "C:\\Users\\andre\\.nuget\\packages\\asp.versioning.http\\10.0.0\\asp.versioning.http.10.0.0.nupkg.sha512",
