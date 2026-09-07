@@ -217,10 +217,15 @@ docker compose up --build
 # - API:      http://localhost:7279/swagger
 # - PostgreSQL: localhost:5432 (user=orderflow, password=${POSTGRES_PASSWORD}, db=orderflow)
 
-# Stop
+## Reset Database
+
+Data persists in the named Docker volume `postgres_data` across runs.
+To start fresh:
+
+# Stop containers (keeps data)
 docker compose down
 
-# Stop and remove volumes (wipes database)
+# Stop containers AND wipe the database (destructive)
 docker compose down -v
 ```
 
