@@ -1,4 +1,4 @@
-# OrderFlow
+# OrderFlow-Api
 
 ![.NET](https://img.shields.io/badge/.NET_10-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
 ![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white)
@@ -7,7 +7,7 @@
 [![CI](https://img.shields.io/github/actions/workflow/status/gil-gam/OrderFlow-Api/ci.yml?branch=main&style=for-the-badge&logo=githubactions&label=CI)](https://github.com/gil-gam/OrderFlow-Api/actions)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 
-**OrderFlow** is a production-grade order management system built with **Clean Architecture**, **CQRS**, and **test-first practices** on **.NET 10**. Designed for maintainability, scalability, and full observability.
+**OrderFlow-Api** is a production-grade order management system built with **Clean Architecture**, **CQRS**, and **test-first practices** on **.NET 10**. Designed for maintainability, scalability, and full observability.
 
 ---
 
