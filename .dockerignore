@@ -1,0 +1,14 @@
+# Git
+.git
+.github
+
+# Build outputs
+**/bin
+**/obj
+
+# Temporary files
+tmp_*.txt
+
+# Secrets — never enter the image
+**/appsettings*.json
+!**/appsettings.template.json

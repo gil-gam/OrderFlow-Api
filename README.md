@@ -4,7 +4,7 @@
 ![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-[![CI](https://img.shields.io/github/actions/workflow/status/gilbertoandreatta/OrderFlow/ci.yml?branch=main&style=for-the-badge&logo=githubactions&label=CI)](https://github.com/gilbertoandreatta/OrderFlow/actions)
+[![CI](https://img.shields.io/github/actions/workflow/status/gil-gam/OrderFlow-Api/ci.yml?branch=main&style=for-the-badge&logo=githubactions&label=CI)](https://github.com/gil-gam/OrderFlow-Api/actions)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 
 **OrderFlow** is a production-grade order management system built with **Clean Architecture**, **CQRS**, and **test-first practices** on **.NET 10**. Designed for maintainability, scalability, and full observability.
@@ -93,8 +93,8 @@ graph TB
 ## Quick Start
 ```bash
 # 1. Clone
-git clone https://github.com/gilbertoandreatta/OrderFlow.git
-cd OrderFlow
+git clone https://github.com/gil-gam/OrderFlow-Api.git
+cd OrderFlow-Api
 
 # 2. Start PostgreSQL
 docker compose up -d postgres
@@ -215,7 +215,7 @@ docker compose up --build
 
 # Services:
 # - API:      http://localhost:7279/swagger
-# - PostgreSQL: localhost:5432 (user=orderflow, password=orderflow123, db=orderflow)
+# - PostgreSQL: localhost:5432 (user=orderflow, password=${POSTGRES_PASSWORD}, db=orderflow)
 
 # Stop
 docker compose down
@@ -228,8 +228,8 @@ docker compose down -v
 
 | Variable | Description | Required | Default | 
 | ------------- | ------ | ------ | ------ |
-| ConnectionStrings__DefaultConnection   | PostgreSQL connection string | ✅ Yes | Host=localhost;Port=5432;Database=OrderFlowDb;Username=postgres;Password=postgres |
-| Jwt__Key         | JWT signing secret key (min 32 chars) | ✅ Yes | OrderFlow-SuperSecret-Key-Minimum-32-Characters-Long!! |
+| ConnectionStrings__DefaultConnection   | PostgreSQL connection string | ✅ Yes | Host=localhost;Port=5432;Database=OrderFlowDb;Username=postgres;Password=<set via env var> |
+| Jwt__Key         | JWT signing secret key (min 32 chars) | ✅ Yes | (32+ chars, set via env var) |
 | Jwt__Issuer   | JWT token issuer | ❌ No | OrderFlow.Api |
 | Jwt__Audience        | JWT token audience | ❌ No | OrderFlow.Client |
 | ASPNETCORE_ENVIRONMENT         | Runtime environment | ❌ No | Production |
@@ -347,7 +347,7 @@ Triggered on **push** and **pull_request** to **main**. Pipeline:
 Triggered automatically when CI succeeds on main. Pipeline:
 
 1. Login to GitHub Container Registry (GHCR)
-2. Build and push Docker image to ghcr.io/gilbertoandreatta/orderflow:latest
+2. Build and push Docker image to ghcr.io/gil-gam/orderflow-api:latest
 3. Image tags: latest, {version}, {major}.{minor}, {sha}
 
 
