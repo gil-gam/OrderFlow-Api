@@ -1,4 +1,4 @@
-# OrderFlow
+# OrderFlow-Api
 
 ![.NET](https://img.shields.io/badge/.NET_10-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
 ![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white)
@@ -7,7 +7,7 @@
 [![CI](https://img.shields.io/github/actions/workflow/status/gil-gam/OrderFlow-Api/ci.yml?branch=main&style=for-the-badge&logo=githubactions&label=CI)](https://github.com/gil-gam/OrderFlow-Api/actions)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 
-**OrderFlow** is a production-grade order management system built with **Clean Architecture**, **CQRS**, and **test-first practices** on **.NET 10**. Designed for maintainability, scalability, and full observability.
+**OrderFlow-Api** is a production-grade order management system built with **Clean Architecture**, **CQRS**, and **test-first practices** on **.NET 10**. Designed for maintainability, scalability, and full observability.
 
 ---
 
@@ -217,10 +217,15 @@ docker compose up --build
 # - API:      http://localhost:7279/swagger
 # - PostgreSQL: localhost:5432 (user=orderflow, password=${POSTGRES_PASSWORD}, db=orderflow)
 
-# Stop
+## Reset Database
+
+Data persists in the named Docker volume `postgres_data` across runs.
+To start fresh:
+
+# Stop containers (keeps data)
 docker compose down
 
-# Stop and remove volumes (wipes database)
+# Stop containers AND wipe the database (destructive)
 docker compose down -v
 ```
 
