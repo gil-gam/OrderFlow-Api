@@ -85,9 +85,12 @@ builder.Services.AddSwaggerGen(options =>
         Description = "Enter your JWT token"
     });
 
-    // Document filter to add {version} parameter from Swagger UI
-    options.DocumentFilter<ReplaceVersionWithExactValueInPathFilter>();
+    options.AddSecurityRequirement(document => new OpenApiSecurityRequirement
+    {
+        [new OpenApiSecuritySchemeReference("Bearer", document)] = new List<string>()
+    });
 
+    options.DocumentFilter<ReplaceVersionWithExactValueInPathFilter>();
 });
 
 // ── API Versioning ────────────────────────────────────────
