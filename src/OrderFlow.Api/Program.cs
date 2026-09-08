@@ -23,8 +23,7 @@ using System.Threading.RateLimiting;
 var builder = WebApplication.CreateBuilder(args);
 
 var databaseUrl = builder.Configuration["DATABASE_URL"];
-if (!string.IsNullOrWhiteSpace(databaseUrl) &&
-    string.IsNullOrWhiteSpace(builder.Configuration.GetConnectionString("DefaultConnection")))
+if (!string.IsNullOrWhiteSpace(databaseUrl))
 {
     var uri = new Uri(databaseUrl);
     var userInfo = uri.UserInfo.Split(':', 2);
