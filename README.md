@@ -238,8 +238,8 @@ The production environment runs on Railway with Docker.
 
 1. Create the **Postgres** service and the API service in the same Railway project.
 2. On the API service, set **Build Context** = repository root and **Dockerfile Path** = `src/OrderFlow.Api/Dockerfile`.
-3. Reference the database on the API service (Variables tab → New Variable):
-
+3. Reference the database on the API service (Variables tab → New Variable)
+- https://orderflow-api-production-701f.up.railway.app/swagger
 
 ## Environment Variables 
 
@@ -321,7 +321,7 @@ $env:ConnectionStrings__DefaultConnection = "Host=myhost;Port=5432;Database=mydb
 ### Health & Observability
 | Method | Route | Description | Auth |
 | -------------- | ---------- |  ---------- |  ------- |
-| GET    | /api/Health       |  Database connectivity check	|  ❌ |
+| GET    | /Health       |  Database connectivity check	|  ❌ |
 | GET    | /metrics  |  Prometheus metrics (OpenTelemetry)  |  ❌ |
 
 
