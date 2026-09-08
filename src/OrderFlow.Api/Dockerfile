@@ -1,6 +1,7 @@
 FROM mcr.microsoft.com/dotnet/sdk:10.0 AS build
 WORKDIR /src
 
+COPY nuget.config ./
 COPY src/OrderFlow.Domain/*.csproj src/OrderFlow.Domain/
 COPY src/OrderFlow.Application/*.csproj src/OrderFlow.Application/
 COPY src/OrderFlow.Infrastructure/*.csproj src/OrderFlow.Infrastructure/

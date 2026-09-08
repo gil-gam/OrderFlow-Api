@@ -6,9 +6,8 @@
 **/bin
 **/obj
 
+# Tests are not needed in the image
+tests
+
 # Temporary files
 tmp_*.txt
-
-# Secrets — never enter the image
-**/appsettings*.json
-!**/appsettings.template.json
