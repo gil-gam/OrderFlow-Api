@@ -22,6 +22,24 @@ using System.Threading.RateLimiting;
 
 var builder = WebApplication.CreateBuilder(args);
 
+var databaseUrl = builder.Configuration["DATABASE_URL"];
+if (!string.IsNullOrWhiteSpace(databaseUrl) &&
+    string.IsNullOrWhiteSpace(builder.Configuration.GetConnectionString("DefaultConnection")))
+{
+    var uri = new Uri(databaseUrl);
+    var userInfo = uri.UserInfo.Split(':', 2);
+    var npgsqlBuilder = new NpgsqlConnectionStringBuilder
+    {
+        Host = uri.Host,
+        Port = uri.Port,
+        Database = uri.AbsolutePath.TrimStart('/'),
+        Username = userInfo[0],
+        Password = userInfo.Length > 1 ? userInfo[1] : string.Empty,
+        SslMode = SslMode.Require
+    };
+    builder.Configuration["ConnectionStrings:DefaultConnection"] = npgsqlBuilder.ConnectionString;
+}
+
 // ── Serilog ───────────────────────────────────────────────
 Log.Logger = new LoggerConfiguration()
     .ReadFrom.Configuration(builder.Configuration)
@@ -252,4 +270,4 @@ public class ReplaceVersionWithExactValueInPathFilter : Swashbuckle.AspNetCore.S
 }
 
 // ── Test Entry Point ──────────────────────────────────────
-public partial class Program { } 
+public partial class Program { }
