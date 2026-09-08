@@ -20,6 +20,7 @@
 - [Architecture Decisions](#architecture-decisions)
 - [Prerequisites](#prerequisites)
 - [Docker](#docker)
+- [Deploying on Railway](#deploying-on-railway)
 - [Environment Variables](#environment-variables)
 - [API Endpoints](#api-endpoints)
 - [Testing](#testing)
@@ -208,7 +209,7 @@ IntegrationTests
 - Docker Desktop
 - EF Core CLI (dotnet tool install --global dotnet-ef)
 
-## Docker 
+## Docker
 ```bash
 # Build and run everything (API + PostgreSQL)
 docker compose up --build
@@ -228,6 +229,17 @@ docker compose down
 # Stop containers AND wipe the database (destructive)
 docker compose down -v
 ```
+Note: in production (Railway) the container exposes port 8080 (ASPNETCORE_URLS=http://+:8080)
+
+
+## Deploying on Railway
+
+The production environment runs on Railway with Docker.
+
+1. Create the **Postgres** service and the API service in the same Railway project.
+2. On the API service, set **Build Context** = repository root and **Dockerfile Path** = `src/OrderFlow.Api/Dockerfile`.
+3. Reference the database on the API service (Variables tab → New Variable):
+
 
 ## Environment Variables 
 
@@ -238,7 +250,9 @@ docker compose down -v
 | Jwt__Issuer   | JWT token issuer | ❌ No | OrderFlow.Api |
 | Jwt__Audience        | JWT token audience | ❌ No | OrderFlow.Client |
 | ASPNETCORE_ENVIRONMENT         | Runtime environment | ❌ No | Production |
+| DATABASE_URL | PostgreSQL connection string on Railway. If present, it takes priority over `ConnectionStrings__DefaultConnection` | ✅ On Railway | — |
 
+**Priority rule:** if `DATABASE_URL` exists in the environment, `Program.cs` converts it to the Npgsql format and overrides `ConnectionStrings:DefaultConnection`. This lets you run locally with `appsettings.json` and use the Railway database in production without changing code.
 
 
 The __ (double underscore) syntax is the .NET convention for mapping environment variables to nested **appsettings.json** keys. **ConnectionStrings__DefaultConnection** maps to **ConnectionStrings:DefaultConnection** in JSON.
@@ -397,6 +411,7 @@ Infrastructure/ # DbContext, Repositories, Migrations
 │   └── OrderFlow.
 
 Api/            # Controllers, Middleware, JWT, Swagger
+│   └── Dockerfile
 ├── tests/
 │   ├── OrderFlow.
 
@@ -405,7 +420,6 @@ UnitTests/      # 108 unit tests
 
 IntegrationTests/ # 18 integration tests
 ├── docker-compose.yml
-├── Dockerfile
 └── .runsettings
 ```
 
