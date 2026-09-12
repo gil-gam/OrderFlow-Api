@@ -41,8 +41,8 @@ public sealed class TokenService : ITokenService
             new Claim(ClaimTypes.Role, role)));
 
         var token = new JwtSecurityToken(
-            issuer: _configuration["Jwt:Issuer"],
-            audience: _configuration["Jwt:Audience"],
+            issuer: _configuration["Jwt:Issuer"] ?? "OrderFlow.Api",
+            audience: _configuration["Jwt:Audience"] ?? "OrderFlow.Client",
             claims: claims,
             expires: DateTime.UtcNow.AddHours(8),
             signingCredentials: credentials);
